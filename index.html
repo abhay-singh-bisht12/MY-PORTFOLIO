@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Abhay Developer Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="custom-navbar">
+    <div class="container nav-container">
+      <a class="logo" href="#home">Abhay<span>.Dev</span></a>
+
+      <button class="hamburger" id="hamburgerBtn" type="button" aria-label="Open Menu">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#home" class="active-link">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center min-vh-100 hero-row">
+        <div class="col-lg-7 hero-content">
+          <p class="tagline">Hello, I'm</p>
+
+          <h1>Abhay Singh Bisht</h1>
+
+          <h2>
+            <span id="typingText"></span><span class="cursor">|</span>
+          </h2>
+
+          <p class="hero-desc">
+            A passionate MCA student and web developer who loves building modern,
+            responsive, and user-friendly web applications.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-main">View Projects</a>
+            <a href="#contact" class="btn-outline-custom">Contact Me</a>
+          </div>
+
+          <div class="social-icons">
+            <a href="https://github.com/abhay-singh-bisht12" target="_blank" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/abhay-singh-bisht/" target="_blank" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="mailto:abhaysinghbisht62@gmail.com" aria-label="Email">
+              <i class="bi bi-envelope"></i>
+            </a>
+            <a href="https://wa.me/8192940779" target="_blank" aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5 text-center hero-image-box">
+          <div class="profile-card">
+            <div class="profile-glow"></div>
+            <img src="assets/me.jpeg" alt="Abhay Singh Bisht" class="profile-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <div class="glass-card">
+            <h3>Who am I?</h3>
+            <p>
+              I am Abhay Singh Bisht from Almora, Uttarakhand. I have completed
+              my BCA and currently pursuing MCA from ABESEC Ghaziabad.
+            </p>
+            <p>
+              I am interested in programming, web development, and AI/ML. I enjoy
+              creating real-world projects with clean UI and practical features.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="info-grid">
+            <div class="info-box">
+              <h4>BCA</h4>
+              <p>Completed</p>
+            </div>
+
+            <div class="info-box">
+              <h4>MCA</h4>
+              <p>Pursuing</p>
+            </div>
+
+            <div class="info-box">
+              <h4>5+</h4>
+              <p>Projects</p>
+            </div>
+
+            <div class="info-box">
+              <h4>AI/ML</h4>
+              <p>Interest</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">My <span>Skills</span></h2>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="skill-tree-card">
+            <div class="skill-tree-header">
+              <i class="bi bi-window-stack"></i>
+              <h3>Web Development</h3>
+            </div>
+
+            <div class="skill-branch">
+              <div class="skill-node"><i class="bi bi-filetype-html"></i><span>HTML5</span></div>
+              <div class="skill-node"><i class="bi bi-filetype-css"></i><span>CSS3</span></div>
+              <div class="skill-node"><i class="bi bi-filetype-js"></i><span>JavaScript</span></div>
+              <div class="skill-node"><i class="bi bi-bootstrap"></i><span>Bootstrap</span></div>
+              <div class="skill-node"><i class="bi bi-wind"></i><span>Tailwind CSS</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="skill-tree-card">
+            <div class="skill-tree-header">
+              <i class="bi bi-code-slash"></i>
+              <h3>Programming Languages</h3>
+            </div>
+
+            <div class="skill-branch">
+              <div class="skill-node"><i class="bi bi-braces"></i><span>C++</span></div>
+              <div class="skill-node"><i class="bi bi-filetype-py"></i><span>Python</span></div>
+              <div class="skill-node"><i class="bi bi-diagram-3"></i><span>DSA</span></div>
+              <div class="skill-node"><i class="bi bi-cpu"></i><span>AI / ML</span></div>
+              <div class="skill-node"><i class="bi bi-robot"></i><span>Deep Learning Basics</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="skill-tree-card">
+            <div class="skill-tree-header">
+              <i class="bi bi-database"></i>
+              <h3>Database & Tools</h3>
+            </div>
+
+            <div class="skill-branch">
+              <div class="skill-node"><i class="bi bi-database-fill"></i><span>MySQL</span></div>
+              <div class="skill-node"><i class="bi bi-hdd-network"></i><span>MongoDB Alts</span></div>
+              <div class="skill-node"><i class="bi bi-github"></i><span>GitHub</span></div>
+              <div class="skill-node"><i class="bi bi-git"></i><span>Git</span></div>
+              <div class="skill-node"><i class="bi bi-terminal"></i><span>VS Code</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">My <span>Projects</span></h2>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-icon"><i class="bi bi-search-heart"></i></div>
+            <h3>Campus Lost & Found Portal</h3>
+            <p>A web portal where students can report lost/found items, search items, and request claims.</p>
+            <a href="https://github.com/abhay-singh-bisht12/Campus-Lost-Found-Portal" target="_blank" class="project-link">
+              View on GitHub <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-icon"><i class="bi bi-file-earmark-person"></i></div>
+            <h3>Resume Analyzer</h3>
+            <p>A smart tool that analyzes resumes, checks skills, and shows missing skills based on job description.</p>
+            <a href="https://github.com/abhay-singh-bisht12/Resume-Analyzer-AI" target="_blank" class="project-link">
+              View on GitHub <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-icon"><i class="bi bi-cloud-sun"></i></div>
+            <h3>Smart Travel Planner</h3>
+            <p>A travel planning frontend with weather, budget planning, itinerary sections, and modern UI.</p>
+            <a href="https://github.com/abhay-singh-bisht12/Smart-Travel-Weather-Planning-Agent" target="_blank" class="project-link">
+              View on GitHub <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-icon"><i class="bi bi-bar-chart"></i></div>
+            <h3>DSA Visualizer</h3>
+            <p>An interactive visualization project to understand sorting and data structure concepts easily.</p>
+            <a href="https://github.com/abhay-singh-bisht12/DsaVisualizer" target="_blank" class="project-link">
+              View on GitHub <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-icon"><i class="bi bi-shield-lock"></i></div>
+            <h3>Password Generator</h3>
+            <p>A secure password generator with length selection, symbols, numbers, and copy feature.</p>
+            <a href="https://github.com/abhay-singh-bisht12/passwordGenerator" target="_blank" class="project-link">
+              View on GitHub <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="project-card">
+            <div class="project-icon"><i class="bi bi-person-workspace"></i></div>
+            <h3>Developer Portfolio</h3>
+            <p>A modern responsive portfolio website with neon glassmorphism UI and smooth animations.</p>
+            <a href="https://github.com/abhay-singh-bisht12" target="_blank" class="project-link">
+              View on GitHub <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">My <span>Certificates</span></h2>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <a href="assets/Python_Essentials_1_certificate_abhay-25m01410085-abes-ac-in_01dd813b-acd9-4310-81d0-ba07958fa3b0.pdf" target="_blank" class="certificate-link">
+            <div class="certificate-card">
+              <i class="bi bi-award"></i>
+              <h4>Python Essentials 1</h4>
+              <p>Cisco Networking Academy</p>
+              <span class="view-certificate">View Certificate</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <a href="assets/Python_Essentials_2_certificate_abhay-25m01410085-abes-ac-in_eb211eca-d929-447c-a5f8-efdf31841bb5.pdf" target="_blank" class="certificate-link">
+            <div class="certificate-card">
+              <i class="bi bi-award"></i>
+              <h4>Python Essentials 2</h4>
+              <p>Cisco Networking Academy</p>
+              <span class="view-certificate">View Certificate</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <a href="assets/Introduction_to_Cybersecurity_certificate_abhay-25m01410085-abes-ac-in_dbec6c58-c8df-421b-8f6d-9379078072e2.pdf" target="_blank" class="certificate-link">
+            <div class="certificate-card">
+              <i class="bi bi-shield-check"></i>
+              <h4>Cyber Security</h4>
+              <p>Introduction to Cyber Security</p>
+              <span class="view-certificate">View Certificate</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <a href="assets/Introduction_to_Modern_AI_certificate_abhay-25m01410085-abes-ac-in_0f42e9ee-1808-4c9f-bd1a-0650b63783db.pdf" target="_blank" class="certificate-link">
+            <div class="certificate-card">
+              <i class="bi bi-cpu"></i>
+              <h4>Modern AI</h4>
+              <p>Introduction to Modern AI</p>
+              <span class="view-certificate">View Certificate</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <h2 class="section-title">Contact <span>Me</span></h2>
+
+      <div class="row g-4 align-items-center ">
+        <div class="col-lg-5">
+          <div class="contact-info-card">
+            <h3>Let's Connect</h3>
+            <p>Have a project idea or want to collaborate? Feel free to contact me.</p>
+
+            <a class="contact-item" href="mailto:abhaysinghbisht62@gmail.com">
+              <i class="bi bi-envelope"></i>
+              <span>Email</span>
+            </a>
+
+            <a class="contact-item" href="https://github.com/abhay-singh-bisht12" target="_blank">
+              <i class="bi bi-github"></i>
+              <span>GitHub</span>
+            </a>
+
+            <a class="contact-item" href="https://www.linkedin.com/in/abhay-singh-bisht/" target="_blank">
+              <i class="bi bi-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+
+            <a class="contact-item" href="https://wa.me/8192940779" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Abhay Singh Bisht | Built with HTML, CSS, Tailwind, Bootstrap & JS</p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
